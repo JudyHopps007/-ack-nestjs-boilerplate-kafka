@@ -9,7 +9,6 @@ async function bootstrap() {
     });
 
     const logger = new Logger();
-
     try {
         await app.select(CommandModule).get(CommandService).exec();
         process.exit(0);
